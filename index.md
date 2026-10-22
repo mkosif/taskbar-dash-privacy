@@ -8,7 +8,7 @@ Taskbar Dash ("the app") is published by Mustafa Kosif. This policy explains wha
 
 - The developer collects nothing. The app has no analytics, no tracking, no ads and no developer server.
 - Everything the app stores stays on your computer.
-- The app only connects to the AI services you choose to sign in to, and to any address you add yourself.
+- The app only connects to the AI services you choose to sign in to. Plugins you add yourself run as you and can connect wherever their program does.
 
 ## What the app connects to
 
@@ -33,7 +33,7 @@ While you sign in, the app listens on your own computer only (`127.0.0.1`) for t
 
 ## What the app stores on your computer
 
-All of it is kept in one folder, where you can open and inspect it. The Microsoft Store version keeps it in its own package storage, `%LOCALAPPDATA%\Packages\<Taskbar Dash package folder>\LocalCache\Local\TaskbarDash` (Windows shows it to the app as `%LOCALAPPDATA%\TaskbarDash`; if that real folder already exists, for example from an earlier copy outside the Store, the app uses it instead). A copy from outside the Store uses `%LOCALAPPDATA%\TaskbarDash`.
+All of it is kept in one folder, where you can open and inspect it. The Microsoft Store version keeps it in its own package storage, `%LOCALAPPDATA%\Packages\mkosif.TaskbarDash_wmz684ne5d16e\LocalCache\Local\TaskbarDash` (Windows shows it to the app as `%LOCALAPPDATA%\TaskbarDash`; if that real folder already exists, for example from an earlier copy outside the Store, the app uses it instead). A copy from outside the Store uses `%LOCALAPPDATA%\TaskbarDash`.
 
 - **Claude, ChatGPT and Grok sign-ins:** each encrypted with Windows data protection, so only your Windows account can read them.
 - **Settings:** which widgets you show, where they sit and where the app's windows were.
