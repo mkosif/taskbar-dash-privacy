@@ -1,6 +1,6 @@
 # Taskbar Dash Privacy Policy
 
-Last updated: November 4, 2026
+Last updated: November 6, 2026
 
 Taskbar Dash ("the app") is published by Mustafa Kosif. This policy explains what the app does with your data.
 
@@ -16,7 +16,7 @@ The app shows your usage limits for AI services. It touches none of them until y
 
 - **Claude**, one of:
   - *Through Claude Code:* with your OK, the app adds one `statusLine` entry to Claude Code's settings (`~/.claude/settings.json`, backed up first; a status line you already had keeps working). Claude Code then hands the app your usage percent and reset times, which it saves in a file on your computer. No sign-in is read and the app connects to nothing.
-  - *With Claude Code's sign-in:* the app reads the sign-in that Claude Code keeps on your computer and asks Anthropic's server (`api.anthropic.com`) for your usage limits. It never renews, changes or copies that sign-in.
+  - *With Claude Code's sign-in:* the app reads the sign-in that Claude Code keeps on your computer and asks Anthropic's server (`api.anthropic.com`) for your usage limits. When its key runs out, the app renews it with Anthropic's sign-in server (`platform.claude.com`), as Claude Code does, and saves the new key back into the same file. It never copies that sign-in anywhere else.
   - *Sign in with Claude:* you sign in on Claude's own page in your web browser (`claude.com`). The app then talks to Anthropic's servers (`platform.claude.com`, `api.anthropic.com`) to keep you signed in and read your usage limits.
 - **ChatGPT**, one of:
   - *Through Codex:* the app asks the Codex command-line tool on your computer for your limits. Codex talks to OpenAI with its own sign-in; the app never reads that sign-in.
@@ -52,7 +52,7 @@ All of it is kept in one folder, where you can open and inspect it. The Microsof
 - **Licence state:** what the Microsoft Store last said about your licence (for example, when the free trial ends), a short log of the last licence check, and whether the "trial has ended" notification was already shown.
 - **Log files:** start-up and error messages. They never contain passwords or sign-in tokens, and they are capped at a small size.
 
-The app reads the files of Claude Code, Codex or Grok only for the way you chose, and changes none of them, except the one `statusLine` entry described above, which Disconnect removes.
+The app reads the files of Claude Code, Codex or Grok only for the way you chose, and changes none of them, except the one `statusLine` entry described above, which Disconnect removes, and Claude Code's key, which the app renews in place for "With Claude Code's sign-in".
 
 Taskbar Dash also shows system information such as CPU, memory, GPU and running programs. It reads this on your computer and never sends it anywhere.
 
